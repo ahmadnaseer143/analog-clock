@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    color: white;
+    background-color: #463a4d;
+    line-height: 3em;
+}
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 3em 1.5em;
+    background-color: #7b4397;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation:clock 4s infinite 0.5s;
+}
+.time{
+    font-size: 3.2em;
+}
+.date{
+    font-size: 1.5em;
+}
+.time,.date{
+    text-shadow: 0 5px 5px darksalmon;
+}
+@keyframes clock{
+    0%{
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    }
+    25%{
+        border-radius: 75% 25% 45% 55%/30% 30% 70% 70%;
+    }
+    50%{
+        border-radius: 61% 39% 27% 73%/62% 77% 33% 38%;
+    }
+    75%{
+        border-radius: 38% 62% 74% 26%/75% 57% 43% 25%;
+    }
+    100%{
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    }
+}

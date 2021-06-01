@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(document).mousemove(function(e){
+            $('.clock').css({left:e.pageX, top:e.pageY});
+            })
+        </script>
+        <div id="time"></div>
+        <div id="date"></div>
+        <script src="code.js"></script>
+    </div>
+</body>
+</html>
